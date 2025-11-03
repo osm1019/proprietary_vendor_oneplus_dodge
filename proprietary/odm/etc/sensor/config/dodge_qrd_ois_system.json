@@ -60,6 +60,12 @@
       },
       "need_reverse_xy":{ "type": "int", "ver": "0",
         "data": "0"
+      },
+      "vsync_gpio_num":{ "type": "int", "ver": "0",
+        "data": "84"
+      },
+      "oisen_gpio_num":{ "type": "int", "ver": "0",
+        "data": "194"
       }
     }
   },

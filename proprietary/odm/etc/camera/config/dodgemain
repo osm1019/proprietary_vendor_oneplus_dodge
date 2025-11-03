@@ -121,6 +121,13 @@
 },
 
 {
+  "Key": "PORTRAIT_FALLBACK_TURBO_HDR_SIZE",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1920, 1440"
+},
+
+{
   "Key": "RAWSR_CAMERA_MODE",
   "Value": "467"
 },
@@ -287,6 +294,7 @@
   "Count": "2",
   "Value": "400, 420"
 },
+
 
 {
   "Key": "HQRAW_ISO_DELAY_SWITCH",

@@ -275,6 +275,7 @@
   "Value": "360, 380"
 },
 
+
 {
   "Key": "HQRAW_ISO_DELAY_SWITCH",
   "Type": "Int32",

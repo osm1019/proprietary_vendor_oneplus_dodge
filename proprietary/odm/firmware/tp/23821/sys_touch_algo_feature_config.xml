@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <algo>
-	<version>2024110101</version>
+	<version>2025060501</version>
 	<device id = "0">
 	<panel id = "0" name="tp/23821/FW_S3910_BOE_HBP.img">
 	<algo-version>v1.3.15</algo-version>
@@ -413,8 +413,16 @@
 				<value>1</value>
 				<range>0,10</range>
 			</param>
+			<param name="decoupleWeightSchemeEn" type="u32" hint="">
+				<value>1</value>
+				<range>0,10</range>
+			</param>
 			<param name="gamePeaceMoveLock" type="u32" hint="">
 				<value>0</value>
+				<range>0,10</range>
+			</param>
+			<param name="minMapFilterLevel" type="u32" hint="">
+				<value>2</value>
 				<range>0,10</range>
 			</param>
 			<param name="slowSlideAlphaRatio" type="u32" hint="">
@@ -580,7 +588,7 @@
 				<range>0,65000</range>
 			</param>
 			<param name="touchFpAreaNumThd" type="u32" hint="">
-				<value>14</value>
+				<value>13</value>
 				<range>0,50</range>
 			</param>
 			<param name="touchFpUpAreaNumThd" type="u32" hint="">
@@ -588,7 +596,7 @@
 				<range>0,50</range>
 			</param>
 			<param name="fpPixelDiffThd" type="u32" hint="">
-				<value>100</value>
+				<value>110</value>
 				<range>0,3000</range>
 			</param>
 			<param name="fpTouchNodeThdCutCoef" type="u32" hint="">

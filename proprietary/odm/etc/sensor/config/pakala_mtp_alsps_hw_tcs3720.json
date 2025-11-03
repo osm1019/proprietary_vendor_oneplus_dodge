@@ -130,6 +130,9 @@
       },
       "reg2":{ "type": "int", "ver": "0",
         "data": "0xB10C"
+      },
+      "reg3":{ "type": "int", "ver": "0",
+        "data": "0x1A1A"
       }
     },
     ".dynamic_cali":{
@@ -137,7 +140,7 @@
       ".dt":{
         "owner": "sns_alsps",
         "anti_shake_delta":{ "type": "int", "ver": "0",
-          "data": "150"
+          "data": "120"
         },
         "low_step":{ "type": "int", "ver": "0",
           "data": "300"
@@ -146,16 +149,16 @@
           "data": "400"
         },
         "low_limit":{ "type": "int", "ver": "0",
-          "data": "400"
+          "data": "350"
         },
         "high_limit":{ "type": "int", "ver": "0",
           "data": "500"
         },
         "dirty_low_step":{ "type": "int", "ver": "0",
-          "data": "180"
+          "data": "1350"
         },
         "dirty_high_step":{ "type": "int", "ver": "0",
-          "data": "280"
+          "data": "1500"
         },
         "ps_dirty_limit":{ "type": "int", "ver": "0",
           "data": "1800"
@@ -167,16 +170,16 @@
           "data": "0"
         },
         "ps_adjust_max":{ "type": "int", "ver": "0",
-          "data": "850"
+          "data": "1500"
         },
         "sampling_count":{ "type": "int", "ver": "0",
           "data": "5"
         },
         "step_max":{ "type": "int", "ver": "0",
-          "data": "400"
+          "data": "500"
         },
         "step_min":{ "type": "int", "ver": "0",
-          "data": "100"
+          "data": "80"
         },
         "step_div":{ "type": "int", "ver": "0",
           "data": "3000"
@@ -188,7 +191,7 @@
           "data": "3001"
         },
         "dynamic_cali_max":{ "type": "int", "ver": "0",
-          "data": "3000"
+          "data": "6000"
         },
         "cali_over_zore_cnt":{ "type": "int", "ver": "0",
           "data": "10"

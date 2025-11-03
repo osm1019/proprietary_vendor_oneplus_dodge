@@ -10,7 +10,7 @@
     "rear_main":["video_mode", "photo_mode", "super_text_mode", "fastvideo_mode", "professional_mode", "id_photo_mode", "slowvideo_mode", "movie_mode", "xpan_mode", "panorama_mode", "long_exposure_mode", "high_pixel_mode"],
     "rear_tele":["video_mode", "professional_mode", "movie_mode", "slowvideo_mode", "photo_mode"],
     "front_main":["video_mode", "photo_mode", "portrait_mode", "fastvideo_mode", "id_photo_mode", "night_mode", "panorama_mode"],
-    "rear_sat":["video_mode", "photo_mode", "super_text_mode", "portrait_mode", "night_mode", "fastvideo_mode"],
+    "rear_sat":["video_mode", "photo_mode", "super_text_mode", "portrait_mode", "night_mode", "fastvideo_mode", "professional_mode"],
     "rear_main_front_main":["multi_camera_mode"]
   },
 
@@ -146,8 +146,8 @@
     "simple_photo_case":[{"preview":"var_camera"}, {"capture":"var_camera"}],
     "motion_capture_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"capture_raw":"var_camera"}, {"raw_output":"var_camera"}, {"capture_raw10_dol":"var_camera"}],
     "macro_capture_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"capture_raw":"var_camera"}, {"raw_output":"var_camera"}, {"capture_raw10_dol":"var_camera"}],
-    "professional_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"capture_raw":"var_camera"}, {"raw_output":"var_camera"}, {"capture_raw_dol":"var_camera"}],
-    "professional_hqraw_case":[{"preview":"var_camera"}, {"capture_raw":"var_camera"}, {"capture_raw_mfnr":"var_camera"}],
+    "professional_case":[{"preview":"var_camera"},{"preview_in_preview":"rear_sat"}, {"raw16_output":"rear_sat"}, {"raw_output":"rear_sat"}, {"capture_yuv":"rear_main"}, {"capture_yuv":"rear_wide"}, {"capture_yuv":"rear_tele"}, {"capture_yuv":"rear_ultra_tele"}, {"capture_raw_dol":"rear_sat"}],
+    "professional_hqraw_case":[{"preview":"rear_sat"}, {"raw16_output":"rear_main"}, {"raw16_output":"rear_wide"}, {"raw16_output":"rear_tele"}, {"raw16_output":"rear_ultra_tele"}, {"capture_raw_mfnr":"rear_sat"}],
     "xpan_case":[{"preview":"var_camera"}, {"capture_raw":"var_camera"}, {"raw_output":"var_camera"}, {"capture_raw_dol":"var_camera"}],
     "front_night_case":[{"preview":"front_main"}, {"raw16_output":"front_main"}, {"raw_output":"front_main"}, {"capture":"front_main"}],
     "front_mfnr_night_case":[{"capture_meta":"front_main"}, {"preview":"front_main"}, {"raw16_output":"front_main"}, {"raw_output":"front_main"}, {"capture_yuv":"front_main"}, {"capture_yuv_mfnr":"front_main"}],
@@ -187,12 +187,12 @@
 
   "mode_type_feature_support_capture_meta_size":{
     "photo_mode":{
-      "rear_sat":"1024X768",
-      "front_main":"1180X540"
+      "rear_sat":"1280X720",
+      "front_main":"1280X720"
     },
     "portrait_mode":{
-      "rear_sat":"1920X1080",
-      "front_main":"1180X540"
+      "rear_sat":"1920X1440",
+      "front_main":"1280X720"
     }
   },
 
@@ -333,6 +333,12 @@
       }
     },
 
+    "super_text_mode": {
+      "rear_sat":{
+        "2dol":"2"
+      }
+    },
+
     "night_mode": {
       "rear_sat":{
         "2dol":"2"
@@ -354,6 +360,9 @@
       },
       "rear_tele":{
         "2dol":"2"
+      },
+      "rear_sat":{
+      "2dol":"2"
       }
     },
 

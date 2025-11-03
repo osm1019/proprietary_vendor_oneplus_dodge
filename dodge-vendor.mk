@@ -52,14 +52,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/M_FaceAttribute_RGB.model:$(TARGET_COPY_OUT_ODM)/etc/camera/M_FaceAttribute_RGB.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Align_occlusion.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Align_occlusion.model \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Align_occlusion_snap.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Align_occlusion_snap.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Attribute_Face_RGB.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Attribute_Face_RGB.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Detect_BodyHead_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_BodyHead_Gray.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Detect_CommonFace_BGR.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_CommonFace_BGR.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Front_Align_occlusion.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Front_Align_occlusion.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Track_FaceRect20cls.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_FaceRect20cls.model \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Track_FaceRect20cls_snap.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_FaceRect20cls_snap.model \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/Vega_Track_HumanBody_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_HumanBody_Gray.model \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/aigc/aigc_models/blurDet_sm8750.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aigc/aigc_models/blurDet_sm8750.bin \
@@ -211,6 +217,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/001_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/001_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/002_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/003.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/003_pre.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/010.png \
@@ -221,36 +228,51 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/011_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/011_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/012_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/013.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/100_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/101_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/102_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/103_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/110_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/111_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/112_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/113.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/200_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/201_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/202_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/203_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/210_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/211_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212_pre.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/212_pre.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212_pre.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/213.png \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/AIdeblemishSnapMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/AIdeblemishSnapMask.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/AIdeblemishSnapMask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/AIdeblemishSnapMask.png \
@@ -314,9 +336,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale001.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale001.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale002.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale002.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale003.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale003.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale100.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale100.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale101.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale101.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale102.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale102.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale103.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale103.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale200.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale200.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale201.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale201.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale202.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale202.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapFemale203.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapFemale203.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale010.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale011.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale011.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale012.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale012.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale110.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale110.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale111.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale111.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale112.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale112.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale113.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale113.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale210.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale210.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale211.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale211.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale212.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale212.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMale213.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMale213.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapMouthMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMouthMask.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/snapSkinmask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapSkinmask.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/fb_model/unify_skin_base.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/unify_skin_base.bin \
@@ -553,6 +591,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/livephoto_coverenhancer/models/license_release_gallery.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/livephoto_coverenhancer/models/license_release_gallery.lic \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/main_inv_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_inv_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/main_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_mapxy_33x25.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/ByYo3If \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Cold.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_A_MoneyBall.bin \
@@ -562,15 +601,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_L_B6.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Delta400.3dl.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Delta400.3dl.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Emerald.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Fuji.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Fuji.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/KingsLanding.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/KingsLanding.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Kodak.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Kodak.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Martin.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Martin.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Moonlight.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Moonlight.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/OPLUSR0604.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/OPLUSR0604.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Radiance.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Radiance.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Serenity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Serenity.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Texture-70.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Texture-70.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/White.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/White.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Winterfell.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Winterfell.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/black_gold.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/blackandwhite_0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite_0.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/blackandwhite_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite_1.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/bright_coloured.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/bright_coloured.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/city.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/city.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/cola.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/cola.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/drjw1994.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/drjw1994.bin \
@@ -583,6 +630,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/fuji.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/fuji_cc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji_cc.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gourmet.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gourmet.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gr.bw.rgba.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gr.bw.rgba.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gr.hi.bw.rgba.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gr.hi.bw.rgba.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gr.nega.rgba.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gr.nega.rgba.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gr.posi.rgba.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gr.posi.rgba.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gt-24hour-city.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-24hour-city.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gt-3dcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-3dcity.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gt-after-glow.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-after-glow.cube.rgb.bin \
@@ -598,15 +649,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/interstellar_space.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/interstellar_space.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/island.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/island.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/jzk-movie.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jzk-movie.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/kodak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/kodak.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/meicam.child.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/meicam.child.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/mono.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/mono_0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono_0.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/mono_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono_1.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/morandi.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morandi.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/morning.dream.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morning.dream.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/mountains.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mountains.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/natural.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/natural.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/neon-2020.cube.rgb.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin \
@@ -726,10 +783,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/tele_inv_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/tele_inv_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/tele_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/tele_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/text_enhance_yuv_v1.tflite:$(TARGET_COPY_OUT_ODM)/etc/camera/text_enhance_yuv_v1.tflite \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/v10_vamm_sig_norm_0408_8143-SIM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/v10_vamm_sig_norm_0408_8143-SIM.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/wide_inv_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_inv_padding_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/wide_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_padding_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json \
     vendor/oneplus/dodge/proprietary/odm/etc/display/qdcm_calib_data_AA569_P_3_A0019_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_AA569_P_3_A0019_dsc_cmd_mode_panel.json \
+    vendor/oneplus/dodge/proprietary/odm/etc/fusionlight.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight.json \
     vendor/oneplus/dodge/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/dodge/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/dodge/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
@@ -779,6 +838,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/dodge_qrd_ois_system.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/dodge_qrd_ois_system.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/json_list:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/json_list \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
+    vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/oplus_gyro_cal_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/oplus_gyro_cal_0.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_ak09919.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_ak09919.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_alsps.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_alsps_hw_tcs3720.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_alsps_hw_tcs3720.json \
@@ -789,6 +849,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_oplus_measurement.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_oplus_measurement.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_oplus_shaking.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_oplus_shaking.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_oplus_smart_prox.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_oplus_smart_prox.json \
+    vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_pedometer_minute.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_pedometer_minute.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/pakala_mtp_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_pocket.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/sns_gyro_cal.json \
     vendor/oneplus/dodge/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
@@ -916,22 +977,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/firmware/tof8801_firmware.bin:$(TARGET_COPY_OUT_ODM)/firmware/tof8801_firmware.bin \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_BOE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_BOEB8_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_BOEB8_HBP.img \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_BOEB8_HBP_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_BOEB8_HBP_FAE.img \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_BOE_FAE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_BOE_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_BOE_HBP.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_BOE_HBP_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_BOE_HBP_FAE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_SAMSUNG.img \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_SAMSUNG_FAE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_TIANMA.img \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_TIANMA_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_TIANMA_FAE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_TIANMA_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_TIANMA_HBP.img \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/FW_S3910_TIANMA_HBP_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/FW_S3910_TIANMA_HBP_FAE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/GloveDetect.tflite:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/GloveDetect.tflite \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIB_S3910_BOEB8_HBP_TS_ALGO.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIB_S3910_BOEB8_HBP_TS_ALGO.so \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIB_S3910_BOEB8_HBP_TS_ALGO_HWASAN.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIB_S3910_BOEB8_HBP_TS_ALGO_HWASAN.so \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIB_S3910_BOEB8_HBP_TS_HAL.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIB_S3910_BOEB8_HBP_TS_HAL.so \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIB_S3910_BOE_HBP_TS_ALGO.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIB_S3910_BOE_HBP_TS_ALGO.so \
-    vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIB_S3910_BOE_HBP_TS_ALGO_HWASAN.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIB_S3910_BOE_HBP_TS_ALGO_HWASAN.so \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIB_S3910_BOE_HBP_TS_HAL.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIB_S3910_BOE_HBP_TS_HAL.so \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIMIT_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIMIT_S3910_BOE.img \
     vendor/oneplus/dodge/proprietary/odm/firmware/tp/23821/LIMIT_S3910_BOEB8_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/23821/LIMIT_S3910_BOEB8_HBP.img \
@@ -1106,13 +1160,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/vendor/lib64/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigsecure.bin \
     vendor/oneplus/dodge/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/oneplus/dodge/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/oneplus/dodge/proprietary/vendor/lib64/camera/hummerFront_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/hummerFront_3.pb \
     vendor/oneplus/dodge/proprietary/vendor/lib64/camera/imx480_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx480_3.pb \
     vendor/oneplus/dodge/proprietary/vendor/lib64/camera/imx615_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx615_3.pb \
-    vendor/oneplus/dodge/proprietary/vendor/lib64/camera/petrelfrontmain_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/petrelfrontmain_3.pb \
-    vendor/oneplus/dodge/proprietary/vendor/lib64/camera/petrelfrontsub_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/petrelfrontsub_4.pb \
-    vendor/oneplus/dodge/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
-    vendor/oneplus/dodge/proprietary/vendor/lib64/camera/zffront_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/zffront_3.pb
+    vendor/oneplus/dodge/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin
 
 PRODUCT_PACKAGES += \
     com.qti.eeprom.gt24p128c2csli_imx766 \
@@ -1303,6 +1353,7 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
+    libGCore4Cell_32E2 \
     libSonyIMX471RmscLibrary \
     libaidenoiser \
     libaidenoiserv2 \
@@ -1367,6 +1418,8 @@ PRODUCT_PACKAGES += \
     libopencv_core \
     libopencv_imgproc \
     libopestriping \
+    liboplus_cfbt \
+    libopluscameraframeboost \
     libpnc \
     libproj_qmot_tracker \
     libproj_sot \
@@ -1384,6 +1437,7 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libvideoml \
     sensors.qsh \
+    vendor.oplus.hardware.camera_rfi-V3-ndk \
     vendor.oplus.hardware.cammidasservice-V1-ndk_vendor \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
@@ -1422,9 +1476,9 @@ PRODUCT_PACKAGES += \
     libBokehPre \
     libCS \
     libCaptureBokeh \
+    libDocRectification \
     libEIS \
     libFDClite \
-    libFaceBeautyCap \
     libFaceBeautyJni \
     libFaceBeautyPre \
     libFaceDistortionCorrection \
@@ -1457,7 +1511,10 @@ PRODUCT_PACKAGES += \
     libaisd_fullfov \
     libaiseg \
     libalCFR \
+    libalog \
+    libalogencrypt \
     libancbase_rt_fusion \
+    libapsdngsdk \
     libapsexif \
     libapsjpeg \
     libapspng \
@@ -1476,6 +1533,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_qnnhtp \
     libarcsoft_scbokeh_video \
     libarcsoft_smart_denoise \
+    libarcsoft_tfm \
     libarcsoft_turbo_fusion_raw_portrait_super_night \
     libarcsoft_turbo_fusion_raw_super_night \
     libarcsoft_turbo_hdr_grf \
@@ -1484,12 +1542,15 @@ PRODUCT_PACKAGES += \
     libarcsoft_turbo_raw \
     libarcsoft_videoautozoom \
     libc++_shared \
+    libcam.odnn.interface \
     libcam.oplus.3a.v2 \
     libcam.oplus.3a.v3 \
+    libcam.oplus.3a.v4 \
     libcreatebin \
     libcreatebinForBaseretouch \
     libcreatebinForFaceretouch \
     libcvface_api \
+    libdngsdkwrapper \
     libeffect_custom \
     libexif-jpeg-aps \
     libextendfile \
@@ -1514,6 +1575,7 @@ PRODUCT_PACKAGES += \
     libsat \
     libsaveshaderbin \
     libsegmentPrePostProc \
+    libsensorbridge \
     libsharebuffer \
     libsharebuffer_impl \
     libssd_det \

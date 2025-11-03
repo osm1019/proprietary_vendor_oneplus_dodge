@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <version>2024120201</version>
+    <version>2025032701</version>
     <device id = "0">
         <panel id = "0" name="tp/23821/FW_S3910_BOE_HBP.img">
             <modules id="PreventionConfig" enable="true" hint="">
@@ -80,7 +80,7 @@
                     <value>1</value>
                 </param>
                 <param name="prevention,long_fingerhold_condition2" type="u32" hint="" >
-                    <value>1141,3209,0,0</value>
+                    <value>640,3209,0,0</value>
                 </param>
                 <param name="prevention,top_corner_config2" type="u32" hint="" >
                     <value>3,80,600,1124,0</value>
@@ -161,7 +161,7 @@
                     <value>1</value>
                 </param>
                 <param name="prevention,uniform_make_up_point_v2" type="u32" hint="" >
-                    <value>10,2,7,7,1</value>
+                    <value>10,2,45,5,1</value>
                 </param>
                 <param name="prevention,corner_point_scale_info_check" type="u32" hint="" >
                     <value>400,40,5,2,1</value>
@@ -308,7 +308,7 @@
                     <value>1</value>
                 </param>
                 <param name="prevention,long_fingerhold_condition2" type="u32" hint="" >
-                    <value>1141,3209,0,0</value>
+                    <value>640,3209,0,0</value>
                 </param>
                 <param name="prevention,top_corner_config2" type="u32" hint="" >
                     <value>3,80,600,1124,0</value>
@@ -389,7 +389,7 @@
                     <value>1</value>
                 </param>
                 <param name="prevention,uniform_make_up_point_v2" type="u32" hint="" >
-                    <value>10,2,7,7,1</value>
+                    <value>10,2,45,5,1</value>
                 </param>
                 <param name="prevention,corner_point_scale_info_check" type="u32" hint="" >
                     <value>400,40,5,2,1</value>

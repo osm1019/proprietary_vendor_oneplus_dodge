@@ -450,6 +450,15 @@
           }
         },
         "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+              "notNeedTest",
+              true
+            ]
+        },
+        "filterResult": false
       }
     ],
     "conditionalBranch": [
