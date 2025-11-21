@@ -327,6 +327,11 @@
             "2112x960"
         ]
     },
+    "com.snapchat.android":{
+        "modifyFocalLength":true,
+        "modifyFocalLengthForCameraId":0,
+        "focalLength":6.4
+    },
     "com.pantum.mobileprint": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080

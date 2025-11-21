@@ -887,6 +887,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_315.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_315.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_316.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_316.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_318.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_318.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_362.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_362.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_363.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_363.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_364.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_364.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/def/effect_365.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_365.bin \
@@ -938,6 +939,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_315.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_315.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_316.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_316.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_318.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_318.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_362.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_362.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_363.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_363.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_364.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_364.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/vibrator/9999/soft/effect_4.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_4.bin \
@@ -1545,7 +1547,8 @@ PRODUCT_PACKAGES += \
     libcam.odnn.interface \
     libcam.oplus.3a.v2 \
     libcam.oplus.3a.v3 \
-    libcam.oplus.3a.v4 \
+    libcreateFDCLitecachebin \
+    libcreateFDCcachebin \
     libcreatebin \
     libcreatebinForBaseretouch \
     libcreatebinForFaceretouch \

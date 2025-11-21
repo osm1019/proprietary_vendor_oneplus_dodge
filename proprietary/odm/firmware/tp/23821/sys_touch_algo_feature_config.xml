@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <algo>
-	<version>2025060501</version>
+	<version>2025102901</version>
 	<device id = "0">
 	<panel id = "0" name="tp/23821/FW_S3910_BOE_HBP.img">
 	<algo-version>v1.3.15</algo-version>
@@ -34,6 +34,10 @@
 			</param>
 		</modules>
 		<modules id="Touch Threshold" enable="true" hint="">
+			<param name="enterIdleThd" type="u32" hint="">
+				<value>150</value>
+				<range>0,300</range>
+			</param>
 			<param name="posPeakThd" type="u32" hint="">
 				<value>180</value>
 				<range>0,300</range>
@@ -989,6 +993,10 @@
 			</param>
 		</modules>
 		<modules id="Touch Threshold" enable="true" hint="">
+			<param name="enterIdleThd" type="u32" hint="">
+				<value>150</value>
+				<range>0,300</range>
+			</param>
 			<param name="posPeakThd" type="u32" hint="">
 				<value>180</value>
 				<range>0,300</range>

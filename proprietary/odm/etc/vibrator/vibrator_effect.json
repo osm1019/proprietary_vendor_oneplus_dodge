@@ -317,6 +317,11 @@
             "play_rate_hz" : 24000
          },
          {
+            "effect_file" : "/odm/etc/vibrator/9999/def/effect_362.bin",
+            "effect_id" : 362,
+            "play_rate_hz" : 24000
+         },
+         {
             "effect_file" : "/odm/etc/vibrator/9999/def/effect_363.bin",
             "effect_id" : 363,
             "play_rate_hz" : 24000
@@ -451,6 +456,11 @@
          {
             "effect_file" : "/odm/etc/vibrator/9999/soft/effect_318.bin",
             "effect_id" : 318,
+            "play_rate_hz" : 24000
+         },
+         {
+            "effect_file" : "/odm/etc/vibrator/9999/soft/effect_362.bin",
+            "effect_id" : 362,
             "play_rate_hz" : 24000
          },
          {
