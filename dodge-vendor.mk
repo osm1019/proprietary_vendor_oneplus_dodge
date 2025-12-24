@@ -592,6 +592,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/main_inv_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_inv_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/main_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_mapxy_33x25.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/800t_blues.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_blues.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/800t_hdr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_hdr.bin \
+    vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/800t_sdr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_sdr.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/ByYo3If \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Cold.cube.rgb.bin \
     vendor/oneplus/dodge/proprietary/odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_A_MoneyBall.bin \

@@ -355,6 +355,10 @@
             "176x144"
         ]
     },
+    "com.netease.cloudmusic": {
+        "previewSizeForAPI1Width": 3168,
+        "previewSizeForAPI1Height": 1440
+    },
     "com.huawei.ado.chongqing": {
         "resolutionFilterForNotAddSizeAPI1": [
             "792x360",
@@ -450,6 +454,7 @@
         "app_enable_rio": true,
         "app_disable_fb_activity": [
             "com.whatsapp.camera.CameraActivity",
+            "com.whatsapp.camera.ui.CameraActivity",
             "com.whatsapp.HomeActivity",
             "com.whatsapp.qrcode.contactqr.ContactQrActivity",
             "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",

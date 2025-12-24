@@ -97,6 +97,8 @@
         <param key="speaker_diff_latency_support" value ="true" />
         <!-- yangxuewen@MULTIMEDAI.AUDIODRIVER.HAL, 2025/05/27, add for voice translation feature -->
         <param key="OPLUS_VOICE_TRANSLATION_SUPPORT" value ="true" />
+        <!-- liuhaituo@MULTIMEDAI.AUDIODRIVER.HAL, 2025/07/30, add for oplus HFP feature -->
+        <param key="OPLUS_HFP_SUPPORT" value="true"/>
     </config_params>
     <config_volume>
         <use_volume_set_param>1</use_volume_set_param>
@@ -418,6 +420,13 @@
                 <ec_enable>1</ec_enable>
             </usecase>
             <usecase>
+                <name>PAL_STREAM_LOOPBACK</name>
+                <custom-config key="oplus-hfp">
+                    <channels>2</channels>
+                    <bit_width>16</bit_width>
+                </custom-config>
+            </usecase>
+            <usecase>
                 <name>PAL_STREAM_VOICE_RECOGNITION</name>
                 <custom-config key="4ch-aec-mic">
                     <ec_enable>1</ec_enable>
@@ -558,6 +567,10 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_LOOPBACK</name>
+                <custom-config key="oplus-hfp">
+                    <channels>2</channels>
+                    <bit_width>16</bit_width>
+                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
@@ -1028,6 +1041,12 @@
                     <snd_device_name>mmi-speaker-right</snd_device_name>
                 </custom-config>
             </usecase>
+            <usecase>
+                <name>PAL_STREAM_LOOPBACK</name>
+                <custom-config key="oplus-hfp">
+                    <priority>1</priority>
+                </custom-config>
+            </usecase>
         </out-device>
         <out-device>
             <id>PAL_DEVICE_OUT_HANDSET</id>
@@ -1076,6 +1095,12 @@
                   <snd_device_name>mmi-receiver</snd_device_name>
               </custom-config>
           </usecase>
+          <usecase>
+              <name>PAL_STREAM_LOOPBACK</name>
+              <custom-config key="oplus-hfp">
+                  <priority>1</priority>
+              </custom-config>
+          </usecase>
         </out-device>
         <out-device>
             <id>PAL_DEVICE_OUT_WIRED_HEADPHONE</id>
@@ -1115,6 +1140,12 @@
                <name>PAL_STREAM_VOIP_RX</name>
                <priority>3</priority>
            </usecase>
+           <usecase>
+               <name>PAL_STREAM_LOOPBACK</name>
+               <custom-config key="oplus-hfp">
+                   <priority>1</priority>
+               </custom-config>
+           </usecase>
         </out-device>
         <out-device>
             <id>PAL_DEVICE_OUT_WIRED_HEADSET</id>
@@ -1153,6 +1184,12 @@
            <usecase>
                <name>PAL_STREAM_VOIP_RX</name>
                <priority>3</priority>
+           </usecase>
+           <usecase>
+               <name>PAL_STREAM_LOOPBACK</name>
+               <custom-config key="oplus-hfp">
+                   <priority>1</priority>
+               </custom-config>
            </usecase>
          </out-device>
         <out-device>
@@ -1244,6 +1281,8 @@
             <back_end_name>USB_AUDIO-RX</back_end_name>
             <max_channels>2</max_channels>
             <channels>2</channels>
+            <!-- liuhaituo@MULTIMEDIA.AUDIODRIVER.HAL, 2025/01/21, resolve 8634299 issue -->
+            <bit_width>24</bit_width>
             <snd_device_name>usb-headphones</snd_device_name>
             <fractional_sr>1</fractional_sr>
             <usecase>
@@ -1253,6 +1292,12 @@
             <usecase>
                 <name>PAL_STREAM_VOIP_RX</name>
                 <priority>3</priority>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_LOOPBACK</name>
+                <custom-config key="oplus-hfp">
+                    <priority>1</priority>
+                </custom-config>
             </usecase>
         </out-device>
         <out-device>
@@ -1260,6 +1305,8 @@
             <back_end_name>USB_AUDIO-RX</back_end_name>
             <max_channels>2</max_channels>
             <channels>2</channels>
+            <!-- liuhaituo@MULTIMEDIA.AUDIODRIVER.HAL, 2025/01/21, resolve 8634299 issue -->
+            <bit_width>24</bit_width>
             <snd_device_name>usb-headphones</snd_device_name>
             <fractional_sr>1</fractional_sr>
             <usecase>
@@ -1269,6 +1316,12 @@
             <usecase>
                 <name>PAL_STREAM_VOIP_RX</name>
                 <priority>3</priority>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_LOOPBACK</name>
+                <custom-config key="oplus-hfp">
+                    <priority>1</priority>
+                </custom-config>
             </usecase>
         </out-device>
         <out-device>
