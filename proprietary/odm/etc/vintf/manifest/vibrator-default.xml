@@ -1,0 +1,22 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.vibrator</name>
+        <version>2</version>
+        <fqname>IVibrator/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.aac.hardware.richtap.vibrator</name>
+        <version>2</version>
+        <fqname>IRichtapVibrator/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.oplus.hardware.oplusvibrator</name>
+        <version>2</version>
+        <fqname>IOplusVibrator/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.oplus.hardware.vibrator</name>
+        <version>1</version>
+        <fqname>ILinearMotorVibrator/default</fqname>
+    </hal>
+</manifest>
