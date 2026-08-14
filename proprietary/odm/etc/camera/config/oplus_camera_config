@@ -6,6 +6,24 @@
     "Value": "1"
   },
   {
+    "VendorTag": "com.oplus.feature.portra.filter.support",
+    "Type": "Byte",
+    "Count": "1",
+    "Value": "1"
+  },
+  {
+    "VendorTag": "com.oplus.feature.tx400.filter.support",
+    "Type": "Byte",
+    "Count": "1",
+    "Value": "1"
+  },
+  {
+    "VendorTag": "com.oplus.camera.filter.selection.reconcile.version",
+    "Type": "Byte",
+    "Count": "1",
+    "Value": "1"
+  },
+  {
     "VendorTag": "com.oplus.feature.aps.use.battery.power",
     "Type": "Byte",
     "Count": "1",
@@ -21,7 +39,7 @@
     "VendorTag": "com.oplus.filter.grain.value",
     "Type": "Float",
     "Count": "12",
-    "Value": "0.25,0.70,0.35,0.35,0.25,0.70,0.35,0.35,0.25,0.70,0.35,0.35"
+    "Value": "0.15,0.2,0.2,0.06,0.25,0.70,0.35,0.35,0.15,0.2,0.2,0.06"
   },
   {
     "VendorTag": "com.oplus.camera.master.captureparam.version",
@@ -3175,6 +3193,12 @@
   },
   {
     "VendorTag": "com.oplus.feature.video.dv.120fps.support",
+    "Type": "Byte",
+    "Count": "1",
+    "Value": "1"
+  },
+  {
+    "VendorTag": "com.oplus.camera.capture.hdr.support",
     "Type": "Byte",
     "Count": "1",
     "Value": "1"
