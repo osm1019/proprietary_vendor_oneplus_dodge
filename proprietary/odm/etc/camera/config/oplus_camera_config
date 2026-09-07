@@ -165,7 +165,7 @@
     "VendorTag": "com.oplus.feature.super.text.support.v2",
     "Type": "Byte",
     "Count": "1",
-    "Value": "1"
+    "Value": "0"
   },
   {
     "VendorTag": "com.oplus.super.text.custom.max.zoom",
@@ -177,7 +177,7 @@
     "VendorTag": "com.oplus.feature.super.text.two.support",
     "Type": "Byte",
     "Count": "1",
-    "Value": "1"
+    "Value": "0"
   },
   {
     "VendorTag": "com.oplus.feature.super.text.hide.ultra.wide.icon",
@@ -1365,7 +1365,7 @@
     "VendorTag": "com.oplus.feature.super.text.support",
     "Type": "Byte",
     "Count": "1",
-    "Value": "1"
+    "Value": "0"
   },
   {
     "VendorTag": "com.oplus.feature.qr.code.scanner.support",
