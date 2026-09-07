@@ -1617,7 +1617,7 @@
     "VendorTag": "com.oplus.feature.photocodec.support",
     "Type": "Byte",
     "Count": "1",
-    "Value": "1"
+    "Value": "0"
   },
   {
     "VendorTag": "com.oplus.feature.front.eis.support",
